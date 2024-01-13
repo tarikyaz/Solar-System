@@ -8,13 +8,15 @@ public class SolarSystemItem : MonoBehaviour
 
     [Inject]
     GameSettings gameSettings;
+    [Inject(Id = "SunSize")]
+    float sunScale;
 
     [SerializeField] float size = 1;
     [SerializeField] float distanceFromOrbitCecnter = 1;
     [SerializeField] float orbitSpeed = 1;
 
     float angel = 0;
-    float currnetDistance => distanceFromOrbitCecnter * gameSettings.DistanceScale;
+    float currnetDistance => sunScale * .5f + distanceFromOrbitCecnter * gameSettings.DistanceScale;
 
     public void SetStartingPos(Vector2 centerPos)
     {

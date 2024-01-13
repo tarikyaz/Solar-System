@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SolarSystemSettingsInstaller
   m_EditorClassIdentifier: 
   gameSettings:
-    TimeScale: 0.001
-    DistanceScale: 10
-    SizeScale: 0.001
+    TimeScale: 0.01
+    DistanceScale: 52.2
+    SizeScale: 1

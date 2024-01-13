@@ -4,16 +4,19 @@ using Zenject;
 
 public class GalaxyObjectInstaller : MonoInstaller
 {
-    [SerializeField] Transform sun;
+    [SerializeField] SpriteRenderer sun;
+    [SerializeField] Camera cam;
     [Inject]
     GameSettings gameSettings;
-    private void Start()
-    {
-        sun.localScale = Vector3.one * gameSettings.SizeScale * 109;
-    }
+    
     public override void InstallBindings()
     {
-        Container.Bind<Transform>().WithId("Sun").FromInstance(sun).AsSingle();
+        float sunScale = 109 * gameSettings.SizeScale;
+        sun.transform.localScale = sunScale * Vector3.one;
+        cam.orthographicSize = sunScale + 40 * gameSettings.DistanceScale;
+        cam.transform.position = sun.transform.position + new Vector3(sun.bounds.max.x, 0, -5);
+        Container.Bind<Transform>().WithId("Sun").FromInstance(sun.transform).AsSingle();
+        Container.Bind<float>().WithId("SunSize").FromInstance(sun.bounds.size.x).AsSingle();
         Container.Bind<SolarSystemItem>().AsSingle();
         Container.Bind<Planet>().AsSingle();
     }
