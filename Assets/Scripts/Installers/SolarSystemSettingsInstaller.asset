@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SolarSystemSettingsInstaller
   m_EditorClassIdentifier: 
   gameSettings:
-    TimeScale: 0.01
-    DistanceScale: 52.2
-    SizeScale: 1
+    TimeScale: 0.1
+    DistanceScale: 202.13
+    SizeScale: 10
+    circle: {fileID: 4756029484418688122, guid: c2bb9541c920de84b96da728f2e7a28f, type: 3}
