@@ -13,7 +13,48 @@ MonoBehaviour:
   m_Name: SolarSystemSettingsInstaller
   m_EditorClassIdentifier: 
   gameSettings:
-    TimeScale: 0.1
-    DistanceScale: 202.13
-    SizeScale: 10
-    circle: {fileID: 4756029484418688122, guid: c2bb9541c920de84b96da728f2e7a28f, type: 3}
+    TimeScale: 0.02
+    DistanceScale: 500
+    SizeScale: 20
+  solarSystemValues:
+    settings:
+    - systemItem: 1
+      Size: 0.383
+      DistanceFromOrbitCenter: 0.39
+      OrbitSpeed: 5
+    - systemItem: 2
+      Size: 0.949
+      DistanceFromOrbitCenter: 0.72
+      OrbitSpeed: 5
+    - systemItem: 3
+      Size: 1
+      DistanceFromOrbitCenter: 1
+      OrbitSpeed: 5
+    - systemItem: 4
+      Size: 0.532
+      DistanceFromOrbitCenter: 1.52
+      OrbitSpeed: 5
+    - systemItem: 5
+      Size: 11.2
+      DistanceFromOrbitCenter: 5.2
+      OrbitSpeed: 5
+    - systemItem: 6
+      Size: 9.45
+      DistanceFromOrbitCenter: 9.58
+      OrbitSpeed: 5
+    - systemItem: 10
+      Size: 4
+      DistanceFromOrbitCenter: 19.22
+      OrbitSpeed: 5
+    - systemItem: 7
+      Size: 3.88
+      DistanceFromOrbitCenter: 30.05
+      OrbitSpeed: 5
+    - systemItem: 8
+      Size: 1
+      DistanceFromOrbitCenter: 39.48
+      OrbitSpeed: 5
+    - systemItem: 9
+      Size: 0.273
+      DistanceFromOrbitCenter: 1.28
+      OrbitSpeed: 5
